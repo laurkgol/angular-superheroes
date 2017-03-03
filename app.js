@@ -12,5 +12,4 @@ angular
   .controller('superHeroCtrl', [ superHeroController ])
   function superHeroController (){
     this.superHeroes = superHeroData;
-  
   }

@@ -10,7 +10,7 @@
 <body ng-controller='superHeroCtrl as vm'>
   <h1> Superhero Phone Book </h1>
   <input type "text" ng-model="search" placeholder="search">
-  <div ng-repeat="superHero in vm.superHeroes | filter:search">
+  <div ng-repeat="superHero in vm.superHeroes | filter:search" ng-class="{'DC':superHero.affiliation==='DC Comics', 'Marvel':superHero.affiliation==='Marvel Comics'}">
     <p> {{superHero.name}}</p>
     <p> {{superHero.phone_number}}</p>
     <p> {{superHero.affiliation}}</p>

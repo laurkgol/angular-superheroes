@@ -5,3 +5,29 @@
 .Marvel{
   background-color: blue;
 }
+
+div{
+  text-align: center;
+  padding: 10pt;
+  margin: 50pt;
+}
+
+h1{
+  font-family: 'Ruslan Display', cursive;
+  font-size: 50pt;
+  text-align: center;
+}
+
+h2{
+  font-family: 'Ruslan Display', cursive;
+  font-size: 25pt;
+}
+
+input{
+  display: inline-block;
+  text-align: center;
+  margin-left: 300pt;
+  font-size: 25pt;
+  font-family: 'Ruslan Display', cursive;
+
+}

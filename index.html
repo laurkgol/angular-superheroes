@@ -1,12 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app='SuperHeroApp'>
 <head>
   <meta charset="UTF-8">
   <title>Superhero Phone Book</title>
   <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
   <script src="app.js"></script>
+</head>
+<body ng-controller='superHeroCtrl as vm'>
+  <h1> Superhero Phone Book </h1>
+  <input type "text" ng-model="search" placeholder="search">
+  <div ng-repeat="superHero in vm.superHeroes | filter:search">
+    <p> {{superHero.name}}</p>
+    <p> {{superHero.phone_number}}</p>
+    <p> {{superHero.affiliation}}</p>
+    <hr>
+  </div>
 </body>
 </html>

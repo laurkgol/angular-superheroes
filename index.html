@@ -14,6 +14,10 @@
     <p> {{superHero.name}}</p>
     <p> {{superHero.phone_number}}</p>
     <p> {{superHero.affiliation}}</p>
+    <button ng-click='show = !show'> See Photo </button>
+    <div ng-show='show'>
+        <img src={{superHero.photo_url}}>
+      </div>
     <hr>
   </div>
 </body>
